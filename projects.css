@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(251, 247, 247);
+    background-image: url(/Main/images/yEpO1X.gif);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    color: white;
+}
+
+/*Scroll behaviour*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*Navbar content*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    box-shadow: 5px 5px 10px white;
+    margin-bottom: 35px;
+}
+
+.navbar .leftContent{
+    text-transform: uppercase;
+    margin-left: 10px;
+    letter-spacing: 5px;
+    font-size: larger;
+    text-shadow: 2px 2px 5px grey;
+    font-weight: bold;
+}
+
+.navbar .rightContent ul{
+    list-style: none;
+}
+
+.navbar .rightContent ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar .rightContent ul li a{
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar .rightContent ul li a:hover{
+    font-size: larger;
+    padding: 5px ;
+    box-shadow: 2px 2px 10px black;
+}
+
+.fa-moon,.fa-sun{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.fa-moon:hover,.fa-sun:hover{
+    border: 2px solid  black;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/*Project description*/
+.projects h5{
+    font-weight: normal;
+}
+
+.projects a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.projects div{
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px grey,
+                -2px -2px 5px grey;
+    text-align: center;
+    background-image: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.projects p{
+    margin: 10px 100px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/*Footer design*/
+.footer{
+    background-color: grey;
+    padding: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    box-shadow: -1px -5px 5px black;
+}
