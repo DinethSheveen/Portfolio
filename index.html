@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3be49a6d55.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="page">
+
+        <!--NAVBAR CONTENT-->
+        <div class="navbar">
+            <div class="leftContent">
+            <p>Dineth</p>
+            <p>Sheveen</p>
+            </div>
+
+            <div class="rightContent">
+                <ul>
+                    <li><a href="./index.html" class="navHome">Home</a></li>
+                    <li><a href="#projectSection" class="navProjects">Projects</a></li>
+                    <li><a href="/projects.html" class="navProjectOverview">Project Overview</a></li>
+                    <li><a href="#" class="navContactMe">Contact Me</a></li>
+                    <li><i class="fa-solid fa-moon" onclick="darkMode()"></i></li>
+                    <li><i class="fa-regular fa-sun" onclick="lightMode()"></i></li>
+                    <li><i class="fa-solid fa-bars menu" onclick="openSideBar()"></i></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Mobile view of the navbar-->
+        <div class="mobileNav">
+            <div class="mobileNavbarContent">
+                <div class="leftContent">
+                    <p>Dineth</p>
+                    <p>Sheveen</p>
+                </div>
+
+                <div>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#projectSection">Projects</a></li>
+                        <li><a href="/projects.html">Project Overview</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                        <li><i class="fa-solid fa-x close" onclick="closeSideBar()"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="marquee">
+            <h1>This is Dineth,<span class="aboutMe"></span></h1>
+        </div>
+        
+
+        <div class="profilePicture">
+            <center>
+                <img src="images/Dineth.jpg" alt="myself">
+            </center>
+        </div>
+
+        <center>
+            <hr>
+        </center>
+
+        <div class="contactInfo">
+            <center>
+                <div class="heading">
+                    <h2>Contact Information</h2> <br>
+                </div>
+    
+                <p>Let's Connect</p> <br>
+    
+                <div class="icons">
+                    <p><a href="mailto:fdineth4000@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a></p>
+                    <p><a href="https://www.linkedin.com/in/dineth-fernando-b94b68295/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></p>
+                    <p><a href="https://github.com/DinethSheveen" target="_blank"><i class="fa-brands fa-github"></i></a></p>
+                </div>
+            </center>
+        </div>
+
+        <center>
+            <hr>
+        </center>
+
+        <div class="skills">
+            <center>
+                <h2>Technical Skills</h2><br>
+                <div class="skill">
+                    <p>Java</p>
+                    <p>Python</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>
+            </center>
+        </div>
+
+        <center>
+            <hr>
+        </center>
+
+        <div class="projects" id="projectSection">
+            <center>
+                <h2>Projects</h2><br>
+                <p>Take a look at the projects I've developed</p>
+                <ul>
+                    <li><a href="/projects.html">To-Do App (Dart)</a></li>
+                    <li><a href="/projects.html">Credit Score Evaluator (Python)</a></li>
+                    <li><a href="/projects.html">Plane Ticket Management System</a></li>
+                    <li><a href="/projects.html">Cinema Ticket Management System</a></li>
+                </ul>
+            </center>
+        </div>
+
+        <center>
+            <hr>
+        </center>
+
+        <!--Footer Section-->
+        <div class="footer">
+            <p>Developed on 05/03/2023 by @Dineth</p>
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+</html>

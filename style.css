@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(251, 247, 247);
+}
+
+/*Scroll behaviour*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*Navbar content*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    box-shadow: 5px 5px 10px black;
+    margin-bottom: 15px;
+}
+
+.navbar .leftContent{
+    text-transform: uppercase;
+    margin-left: 10px;
+    letter-spacing: 5px;
+    font-size: larger;
+    text-shadow: 2px 2px 5px grey;
+    font-weight: bold;
+}
+
+.navbar .rightContent ul{
+    list-style: none;
+}
+
+.navbar .rightContent ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar .rightContent ul li a{
+    text-decoration: none;
+    color: black;
+    text-shadow: 2px 2px 5px grey;
+    text-transform: uppercase;
+    font-size: large;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    box-shadow: 2px 2px 10px grey;
+    border-radius: 5px ;
+}
+
+.navbar .rightContent ul li a:hover{
+    font-size: larger;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 10px;
+}
+
+.fa-moon,.fa-sun{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.fa-moon:hover,.fa-sun:hover{
+    border: 2px solid  black;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.menu{
+    display: none;
+    cursor: pointer;
+}
+
+/*Profile content*/
+.marquee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(120deg,orange,purple);
+}
+
+.marquee h1,span{
+    padding: 50px 0px;
+    background-color: transparent;
+}
+
+img{
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*Contact Info*/
+.contactInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactInfo a{
+    color: black;
+}
+
+.contactInfo .icons{
+    display: flex;
+    justify-content: center;
+}
+
+.contactInfo i{
+    margin-right: 10px;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contactInfo i:hover{
+    color: white;
+    background-color: black;
+}
+
+/*Skills section*/
+.skills .skill{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.skills .skill p{
+    background-color: rgb(223, 220, 220);
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    color: black;
+}
+
+/*Project section*/
+.projects ul li{
+    margin: 40px 0px;
+}
+
+.projects a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(223, 220, 220);
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 2px 2px 5px black;
+}
+
+.projects a:hover{
+    font-size: large;
+}
+
+hr{
+    margin: 70px 0px;
+    width: 50%;
+}
+
+/*Footer design*/
+.footer{
+    background-color: grey;
+    padding: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    box-shadow: -1px -5px 5px black;
+}
+
+/*Mobile navbar design*/
+.mobileNav{
+    position: fixed;
+    right: 0;
+    top:0;
+    height: 100vh;
+    width: 35%;
+    background: linear-gradient(120deg,white,black);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+.mobileNavbarContent .leftContent{
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: larger;
+    text-shadow: 2px 2px 5px grey;
+    text-transform: uppercase;
+}
+
+.mobileNavbarContent .close{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.mobileNavbarContent ul{
+    list-style: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.mobileNavbarContent li{
+    padding: 10px;
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.mobileNavbarContent li:last-child{
+    box-shadow: none;
+}
+
+.mobileNavbarContent li a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/*Dark mode icons*/
+.blackPage{
+    color:white;
+    background-color: black;
+}
+
+.darkIcon{
+    border: 2px solid white;
+    color:white;
+}
+
+@media (max-width:900px){
+    .menu{
+        display: block;
+    }
+
+    .navbar .rightContent ul li a,.fa-moon,.fa-sun{
+        display: none;
+    }
+}
