@@ -49,7 +49,7 @@ html{
     font-size: large;
     letter-spacing: 2px;
     transition: 0.5s;
-    box-shadow: 2px 2px 10px grey;
+    text-shadow: 3px 3px 3px grey;
     border-radius: 5px ;
 }
 
@@ -111,6 +111,24 @@ img{
 .contactInfo .icons{
     display: flex;
     justify-content: center;
+}
+
+.contactInfo .icons .emailIcon,.instagramIcon,.githubIcon{
+    position: relative;
+}
+
+.hoverInfo{
+    position: absolute;
+    top: 70px;
+    left: -10px;
+    background-color: rgb(190, 187, 187);
+    padding: 5px 10px;
+    opacity: 0;
+}
+
+.contactInfo .icons .emailIcon:hover .hoverInfo,.instagramIcon:hover .hoverInfo,.githubIcon:hover .hoverInfo{
+    opacity: 1;
+    transition: 1s;
 }
 
 .contactInfo i{
@@ -183,11 +201,12 @@ hr{
 /*Mobile navbar design*/
 .mobileNav{
     position: fixed;
-    right: 0;
+    right: -100%;
     top:0;
-    height: 100vh;
-    width: 35%;
-    background: linear-gradient(120deg,white,black);
+    height: 100%;
+    width: 20%;
+    background: transparent;
+    backdrop-filter: blur(15px);
     padding: 20px;
     border-radius: 10px;
     display: none;
@@ -196,8 +215,8 @@ hr{
 .mobileNavbarContent .leftContent{
     font-weight: bold;
     letter-spacing: 2px;
-    font-size: larger;
-    text-shadow: 2px 2px 5px grey;
+    font-size: 20px;
+    text-shadow: 3px 3px 5px white;
     text-transform: uppercase;
 }
 
@@ -218,7 +237,10 @@ hr{
 .mobileNavbarContent li{
     padding: 10px;
     margin-bottom: 40px;
-    box-shadow: 2px 2px 5px black;
+}
+
+.mobileNavbarContent li:first-child{
+    margin-top: 100px;
 }
 
 .mobileNavbarContent li:last-child{
@@ -231,7 +253,13 @@ hr{
     text-transform: uppercase;
     font-size: larger;
     font-weight: bold;
+    transition: 0.5s;
     letter-spacing: 1px;
+}
+
+.mobileNavbarContent li a:hover{
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 5px white;
 }
 
 
