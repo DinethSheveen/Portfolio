@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Overview</title>
     <link rel="stylesheet" href="projects.css">
+    <script src="https://kit.fontawesome.com/3be49a6d55.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="page">
@@ -21,11 +22,33 @@
                     <li><a href="#python">Credit Score</a></li>
                     <li><a href="#dart">To-Do</a></li>
                     <li><a href="#java2">Cinema</a></li>
-                    <li><a href="#" class="navContactMe">Contact Me</a></li>
+                    <li><a href="/contact.html" class="navContactMe">Contact Me</a></li>
+                    <li><i class="fa-solid fa-bars menu" onclick="openSideBar()"></i></li>
                 </ul>
             </div>
         </div>
 
+        <!--Mobile View of the navbar-->
+        <div class="mobileNavbar">
+            <div class="mobileLeftContent">
+            <p>Dineth</p>
+            <p>Sheveen</p>
+            </div>
+
+            <div class="mobileLinks">
+                <ul>
+                    <li><a href="./Main/index.html">Home</a></li>
+                    <li><a href="#java1">Plane</a></li>
+                    <li><a href="#python">Credit Score</a></li>
+                    <li><a href="#dart">To-Do</a></li>
+                    <li><a href="#java2">Cinema</a></li>
+                    <li><a href="/contact.html" class="navContactMe">Contact Me</a></li>
+                    <li><i class="fa-solid fa-x close" onclick="closeSideBar()"></i></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Project Briefing-->
         <div class="overview">
             <div class="projects">
                 <div>
@@ -71,7 +94,19 @@
         <div class="footer">
             <p>Developed on 05/03/2023 by @Dineth</p>
         </div>
-
     </div>
+
+    <script type="text/javascript">
+        const sideBar = document.querySelector(".mobileNavbar");
+
+        function openSideBar(){
+            sideBar.style = "display:block";
+        }
+
+        function closeSideBar(){
+            sideBar.style = "display:none"
+        }
+    </script>
+    
 </body>
 </html>
