@@ -72,7 +72,7 @@ html{
 }
 
 .menu{
-    display: none;
+    visibility: hidden;
     cursor: pointer;
 }
 
@@ -205,11 +205,12 @@ hr{
     top:0;
     height: 100%;
     width: 30%;
-    background: transparent;
+    background: linear-gradient(120deg,white,black);
     backdrop-filter: blur(15px);
     padding: 20px;
     border-radius: 10px;
     display: none;
+    z-index: 1;
 }
 
 .mobileNavbarContent .leftContent{
@@ -237,6 +238,8 @@ hr{
 .mobileNavbarContent li{
     padding: 10px;
     margin-bottom: 40px;
+    box-shadow: 2px 2px 5px black,
+                -2px -2px 5px white;
 }
 
 .mobileNavbarContent li:first-child{
@@ -276,10 +279,16 @@ hr{
 
 @media (max-width:900px){
     .menu{
-        display: block;
+        visibility: visible;
     }
 
     .navbar .rightContent ul li a,.fa-moon,.fa-sun{
         display: none;
+    }
+}
+
+@media(max-width:800px){
+    .mobileNav{
+        width: 50%;
     }
 }
