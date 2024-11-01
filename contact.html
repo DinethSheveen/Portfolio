@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/3be49a6d55.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--NAVBAR CONTENT-->
+    <div class="navbar">
+        <div class="leftContent">
+        <p>Dineth</p>
+        <p>Sheveen</p>
+        </div>
+
+        <div class="rightContent">
+            <ul>
+                <li><a href="./Main/index.html" class="navHome">Home</a></li>
+                <li><a href="/projects.html" class="navProjectOverview">Project Overview</a></li>
+                <li><a href="/contact.html" class="navContactMe">Contact Me</a></li>
+                <li><i class="fa-solid fa-bars menu" onclick="openSideBar()"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Mobile view of the navbar-->
+    <div class="mobileNav">
+        <div class="mobileNavbarContent">
+            <div class="leftContent">
+                <p>Dineth</p>
+                <p>Sheveen</p>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="./Main/index.html">Home</a></li>
+                    <li><a href="/projects.html">Project Overview</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                    <li><i class="fa-solid fa-x close" onclick="closeSideBar()"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="contactForm">
+        <div class="leftContent">
+            <div class="heading">
+                <div class="topic">
+                    Let's Connect 
+                </div>
+
+                <div class="statement">
+                    whether you have a question, want to know me better, simply want to contact me <br><br>
+                    Feel free to contact me via the forum
+                </div>
+            </div>
+        </div>
+        <div class="rightContent">
+            <form>
+                <h3 id="heading">Contact Me</h3>
+                <p>* Required</p> <br>
+                <div id="name" class="field">
+                    <input type="text" placeholder="Name*" required>
+                </div>
+
+                <div id="mail" class="field">
+                    <input type="email" placeholder="E-mail*" required>
+                </div>
+
+                <div id="phone" class="field">
+                    <input type="tel" placeholder="Phone Number">
+                </div>
+
+                <div id="company" class="field">
+                    <input type="text" placeholder="Company Name">
+                </div>
+
+                <textarea id="message" name="message"  placeholder="Message"></textarea>
+
+                <div class="submitButton">
+                    <button class="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        let sideBar = document.querySelector(".mobileNav");
+
+        function openSideBar(){
+            sideBar.style = "display:block";
+        }
+
+        function closeSideBar(){
+            sideBar.style = "display:none"
+        }
+
+    </script>
+
+</body>
+</html>
